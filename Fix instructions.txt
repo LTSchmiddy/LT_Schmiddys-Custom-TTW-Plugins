@@ -1,0 +1,22 @@
+﻿Using FNVEdit to apply fix:
+
+Right click, Unselect all esm, select only TTWInteriorsProject_Combo.esm
+
+Delete the following (right click, select remove):
+-Cell
+ -Block 0
+  -Sub-Block 4
+   -07002738 DLC02zcBaileysToWasteland
+
+Edit the following changing Record Flags "Initially disabled" to 0
+- Worldspace
+	- 0607EA1F
+		- 06002DB4 Cell
+			- Persistent
+				- 07005691 Placed Object OffDoorMetalDoor01EXTERIOR "Door" [DOOR:00014D51]
+		- Block 0, -1
+			- Sub-Block 0,-2
+				- 06000DA0
+					- Temporary
+						- 0700566C Placed Object RWDoorwayFree01 [STAT:000695CF]
+						- 07007BAF Placed Object?MetSignEmpOnly01 [STAT:06092D54]
